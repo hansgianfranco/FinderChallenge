@@ -1,0 +1,96 @@
+* {
+  font-family: "Proxima Nova";
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.save-box {
+  padding-right: 40px;
+}
+.save-box .save-item {
+  list-style: none;
+}
+.save-item a {
+  color: #00f;
+  text-decoration: underline;
+}
+.save-item .save-option {
+  display: none;
+}
+.save-item.active {
+  background: #edeffe;
+}
+.save-item.active .save-option {
+  display: block;
+}
+.save-option {
+  list-style: none;
+  padding: 0;
+}
+.save-option .save-option-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+.save-option-item a {
+  font-size: 12px;
+  color: #00f;
+  text-decoration: underline;
+}
+.filter-box {
+  padding-right: 40px;
+}
+.filter-box .filter-item {
+  list-style: none;
+}
+.filter-item a {
+  text-decoration: underline;
+  color: #00f;
+}
+.filter-item.active a {
+  text-decoration: none;
+  color: #000;
+}
+.search-form {
+  margin-top: 30px;
+}
+.search-form .awesomplete,
+.search-form .search-input,
+.search-form .search-button,
+.search-form .search-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.search-form .search-text {
+  padding-left: 10px;
+  color: #00f;
+  text-decoration: underline;
+}
+.awesomplete {
+  position: relative;
+}
+.awesomplete ul {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.awesomplete li {
+  padding: 5px 10px;
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+.awesomplete .visually-hidden {
+  display: none;
+}
+.result-item h2 {
+  font-size: 20px;
+}
+@media only screen and (max-width: 650px) {
+  .filters {
+    display: none;
+  }
+}

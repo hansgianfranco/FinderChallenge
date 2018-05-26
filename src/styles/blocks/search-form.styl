@@ -1,9 +1,38 @@
 .search-form
     margin-top 30px
-
+    .awesomplete,
+    .search-input,
+    .search-button,
+    .search-text
+        display inline-block
+        vertical-align middle
+    .search-text
+        padding-left 10px
+        color #0000ff
+        text-decoration underline
+.awesomplete
+    position relative
+    ul
+        background #ffffff
+        margin 0
+        padding 0
+        position absolute
+        top 30px
+        left 0
+    li
+        padding 5px 10px
+        list-style none
+        cursor pointer
+        border-bottom 1px solid #ddd
+    .visually-hidden
+        display none
+.result-item
+    h2
+        font-size 20px
 /*
     for responsive
 */
-.search-form
+.filters
     +below(650px)
         display none
+
